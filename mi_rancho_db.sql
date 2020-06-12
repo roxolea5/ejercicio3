@@ -212,4 +212,4 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`adm_usuario_persona` (
     REFERENCES `mi_rancho`.`adm_usuarios` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;adm_personas
+ENGINE = InnoDB;
