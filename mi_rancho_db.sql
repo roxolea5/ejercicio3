@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`cat_paises` (
   `abreviatura` VARCHAR(5) CHARACTER SET 'utf8' COLLATE 'utf8_spanish_ci' NOT NULL COMMENT 'Abreviatura',
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci
 COMMENT = 'Catalogo de Paises';
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`cat_estados` (
     FOREIGN KEY (`pais_id`)
     REFERENCES `mi_rancho`.`cat_paises` (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci
 COMMENT = 'Catalogo de Estados';
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`cat_municipios` (
     FOREIGN KEY (`estado_id`)
     REFERENCES `mi_rancho`.`cat_estados` (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 7
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci
 COMMENT = 'Catalogo de Municipios';
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`cat_localidades` (
     FOREIGN KEY (`estado_id`)
     REFERENCES `mi_rancho`.`cat_estados` (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 19
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci
 COMMENT = 'Catalogo de Localidades';
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`adm_usuarios` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 14
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci;
 
@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`adm_roles_usuario` (
     FOREIGN KEY (`rol`)
     REFERENCES `mi_rancho`.`adm_roles` (`rol`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 15
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci
 COMMENT = 'Asociacion entre roles y usuarios';
@@ -170,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `mi_rancho`.`adm_personas` (
     FOREIGN KEY (`estado_id`)
     REFERENCES `mi_rancho`.`cat_estados` (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci
 COMMENT = 'Cualquier actor es una persona';

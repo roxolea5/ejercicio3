@@ -1,3 +1,5 @@
+use mi_rancho;
+
 INSERT INTO `cat_estados` (`id`, `desc_estado`, `pais_id`) VALUES
 (1, 'Aguascalientes', 1),
 (2, 'Baja California', 1),

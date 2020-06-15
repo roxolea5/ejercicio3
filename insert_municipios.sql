@@ -1,3 +1,5 @@
+use mi_rancho;
+
 INSERT INTO `cat_municipios` (`id`, `desc_municipio`, `estado_id`) VALUES
 	(1, 'Aguascalientes', 1),
 	(2, 'Asientos', 1),
