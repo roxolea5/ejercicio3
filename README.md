@@ -7,3 +7,4 @@ Ejercicio con base de datos
 2020-06-10 16:03 - conexion desde heidiSQL y continuacion de ejercicio
 2020-06-10 12:27 - llenado catalogos ubicacion
 2020-06-15 10:32 - llenado tablas restantes
+2020-06-16 11:42 - conceptos y propuesta
